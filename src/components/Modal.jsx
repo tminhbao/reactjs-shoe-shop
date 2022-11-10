@@ -24,15 +24,17 @@ export default class Modal extends Component {
                 />
               </div>
               <div className="modal-body">
-                <p>
-                  Tên sản phẩm: <span>{content.name}</span>
-                </p>
-                <p>
-                  Mô tả: <span>{content.description}</span>
-                </p>
-                <p>
-                  Giá: <span>{content.price}$</span>
-                </p>
+                <h6>
+                  Tên sản phẩm:{" "}
+                  <span className="text-info">{content.name}</span>
+                </h6>
+                <h6>
+                  Mô tả:{" "}
+                  <span className="text-success">{content.description}</span>
+                </h6>
+                <h6>
+                  Giá: <span className="text-danger">{content.price}$</span>
+                </h6>
               </div>
               <div className="modal-footer">
                 <button

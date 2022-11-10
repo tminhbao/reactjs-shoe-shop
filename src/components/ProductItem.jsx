@@ -23,7 +23,10 @@ export default class ProductItem extends Component {
           <h5 className="card-title">{item.name}</h5>
           <p className="card-text">{item.price} $</p>
           <div className="button-wrapper d-flex justify-content-around">
-            <button className="btn btn-dark">Add to cart</button>
+            <button className="btn btn-dark">
+              Add to cart
+              <i className="fa fa-cart-plus m-2"></i>
+            </button>
             <button
               type="button"
               className="btn btn-primary"
